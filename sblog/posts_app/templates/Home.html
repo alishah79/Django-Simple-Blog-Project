@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+{% extends 'Base.html' %}
+
+{% block content %}
+
+<h2> <i>Recent Posts:</i> </h2>
+
+{% for post in object_list|slice:"-4:-1" reversed %}
+
+<h2 style="color: darkolivegreen;">{{ post.title }}:</h2>
+<h3 style="color: darkolivegreen;">{{ post.text|slice:"0:20" }}...</h3>
+<hr style="color: darkgreen; height: 6px; background-color: yellowgreen;">
+
+{% endfor %}
+
+{% endblock content %}
