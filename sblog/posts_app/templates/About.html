@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    
+</head>
+{% extends 'Base.html' %}
+{% block content %}
+
+<h1 style="text-align: center;">About This Weblog:</h1>
+<p style="text-align:center; align-items:center">This is a test weblog for my Python-Django bootcamp.
+    I hope you enjoy reading articles on this website...
+</p>
+<p style="text-align:center; align-items:center">
+{% load static %}
+<img style="width: 250px; height: 450px" src="{% static 'pictures/about.jpg' %}" alt="A sample picture."/>
+</p>
+<p style="text-align:center; align-items:center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur voluptatem quo nobis aliquid sunt adipisci illum enim iusto, minus debitis. Ullam eum quod officia amet eos aperiam magni esse?</p>
+<br>
+{% endblock content %}
+
+</html>

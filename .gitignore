@@ -2,3 +2,4 @@
 *.pyc
 sblog/sblog/__pycache__/urls.cpython-310.pyc
 *.pyc
+*.json
